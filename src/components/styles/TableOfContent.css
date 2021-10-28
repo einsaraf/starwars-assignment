@@ -1,0 +1,45 @@
+#side-bar {
+  position: fixed;
+  top: 2.5vh;
+  left: 0;
+  width: 15vw;
+  min-width: 200px;
+  height: 100vh;
+  font-size: 3vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5) 20%,black);
+  backdrop-filter: blur(25px);
+  border-radius: 0 25px 0 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.side-bar-button {
+  height: 50px;
+  line-height: 50px;
+  min-width: 150px;
+  padding: 0 1vw;
+  white-space: nowrap;
+  overflow: hidden;
+  border-left: 3px solid rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  font-size: 1vw;
+  background-color: rgba(0,0,0,0.9);
+  margin: 2vh;
+  text-align: center;
+  color: white;
+}
+
+.side-bar-button:first-child {
+  border-top-right-radius: 15px;
+}
+
+.selected {
+  border-left: 3px solid red;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .side-bar-button {
+    font-size: min(2vw,12px);
+  }
+}
